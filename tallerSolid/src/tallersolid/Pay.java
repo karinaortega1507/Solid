@@ -11,24 +11,21 @@ package tallersolid;
  */
 public class Pay {
     
-    private Pay_card pay_card;
-    private Pay_cash pay_cash;
-    
-    
-    public void pay(Pay_card pay){
-        pay_card(pay.card,pay.book);
+    protected String type;
+    protected Book book;
+
+    public Pay(String type, Book book) {
+        this.type = type;
+        this.book = book;
     }
-    public void pay(Pay_cash pay){
-        pay_card(pay.cash,pay.book);
-    }
+    
        
     public void pay_card(String card, Book book) {
         /*
 	 * change state to true
 	 */
     }
-        
-        
+           
     public void pay_cash(String money, Book book) {
             /*
              * change state to true

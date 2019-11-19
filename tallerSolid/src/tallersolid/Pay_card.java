@@ -10,31 +10,32 @@ package tallersolid;
  * @author Hp
  */
 public class Pay_card extends Pay{
-    String card;
-    Book book;
-    
-     public Pay_card(String card, Book book) {
-        this.card = card;
-        this.book = book;
+    //private Pay_card pay_card;
+
+    public Pay_card(String c,Book b) {
+        super(c,b);
+        
     }
-     
-    public String getCard() {
-        return card;
+
+    public String getType() {
+        return type;
     }
 
     public Book getBook() {
         return book;
     }
 
-    public void setCard(String card) {
-        this.card = card;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public void setBook(Book book) {
         this.book = book;
     }
-
-   
+    
+    public void pay(Pay_card pay){
+        pay_card(pay.getType(),pay.book);
+    }
         
 
 	

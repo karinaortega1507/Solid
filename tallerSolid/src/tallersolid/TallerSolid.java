@@ -16,12 +16,11 @@ public class TallerSolid {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Pay_card card = null;
-        Pay_cash cash = null;
+ 
         Pay p = new Pay_card("gg",new Book("title","author","category",2));
         Pay p2 = new Pay_cash("gg",new Book("title","author","category",3));
-        p.pay(card);
-        p2.pay(cash);
+        p.pay_card("car", new Book("title","author","category",2));
+        p2.pay_cash("money", new Book("title","author","category",3));
     }
     
 }
