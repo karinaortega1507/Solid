@@ -12,7 +12,12 @@ package tallersolid;
 public class Pay_card extends Pay{
     String card;
     Book book;
-
+    
+     public Pay_card(String card, Book book) {
+        this.card = card;
+        this.book = book;
+    }
+     
     public String getCard() {
         return card;
     }
@@ -28,6 +33,8 @@ public class Pay_card extends Pay{
     public void setBook(Book book) {
         this.book = book;
     }
+
+   
         
 
 	

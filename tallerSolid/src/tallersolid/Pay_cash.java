@@ -13,6 +13,12 @@ public class Pay_cash extends Pay{
     String cash;
     Book book;
 
+    public Pay_cash(String cash, Book book) {
+        this.cash = cash;
+        this.book = book;
+    }
+    
+    
     public String getCash() {
         return cash;
     }
