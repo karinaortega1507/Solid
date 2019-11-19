@@ -9,11 +9,32 @@ package tallersolid;
  *
  * @author CltControl
  */
-public interface Pay {
+public class Pay {
     
-    public void pay_card(String card, Book book);
-		
-    public void pay_cash(String money, Book book);
+    private Pay_card pay_card;
+    private Pay_cash pay_cash;
+    
+    
+    public void pay(Pay_card pay){
+        pay_card(pay.card,pay.book);
+    }
+    public void pay(Pay_cash pay){
+        pay_card(pay.cash,pay.book);
+    }
+       
+    public void pay_card(String card, Book book) {
+        /*
+	 * change state to true
+	 */
+    }
+        
+        
+    public void pay_cash(String money, Book book) {
+            /*
+             * change state to true
+             */
+    }
+
 		
     
 }
