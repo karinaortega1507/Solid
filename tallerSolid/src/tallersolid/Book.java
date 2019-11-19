@@ -30,21 +30,6 @@ public class Book {
 	void setAuthor(String author) {
 		this.author = author;
 	}
-	/*void searchBook() {
-		/*
-		 * Search a book for author or title or category
-		 
-	}
-        public void pay_card(String card, Book book) {
-		/*
-		 * change state to true
-		 
-	}
 	
-	public void pay_cash(String money, Book book) {
-		/*
-		 * change state to true
-		 
-	}*/
 
 }
