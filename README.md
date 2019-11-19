@@ -84,7 +84,7 @@ class StoreBook {
 
 
 
-#Correciones
+#     Correciones  
 * Se identifica que el principio SRP no se cumple ya que hay dependencia entre las clases y si los requisitos cambian con el tiempo cada uno de los métodos también cambiarán la responsabilidad de al menos una clase(lo que sucede ahora al querer implementar la forma de pago PayPal).
 * Se identifica que el principio OCP no se cumple puesto que las clases están abiertas a modificaciones para corregir se implementó la clase Pay como clase Padre y clases hijas Pay_Card, Pay_Cash, Pay_Pal además de la interface SearchBook. las clases estan cerradas a modificaciones pero abiertas para extenderse pudiendo agregar nuevos comportamientos sin modifcar el código actual.
 * El principio LSP  extendiende del principio OCP ya que se centra en el comportamiento de superclases y subtipos como sucede con la clase Padre Pay y la clase StoreBook que implementa SearchBook.
