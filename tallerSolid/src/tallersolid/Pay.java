@@ -31,7 +31,11 @@ public class Pay {
              * change state to true
              */
     }
-
+    public void pay_pal(String pay_pal, Book book) {
+            /*
+             * change state to true
+             */
+    }
 		
     
 }
